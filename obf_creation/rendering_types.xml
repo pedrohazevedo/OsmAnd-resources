@@ -6357,17 +6357,10 @@
 		<routing_type tag="network" value="ncn" mode="register" base="true" relation="true"/>
 		<routing_type tag="network" value="icn" mode="register" base="true" relation="true"/>
 
-		<routing_type tag="osmand_ele_start" mode="amend"/>
-		<routing_type tag="osmand_ele_end" mode="amend"/>
-		<routing_type tag="osmand_ele_asc"  mode="amend"/>
-		<routing_type tag="osmand_ele_desc" mode="amend"/>
-<!--		<routing_type tag="osmand_ele_incline_max" mode="amend"/>
-		<routing_type tag="osmand_ele_decline_max" mode="amend"/>-->
-
 		<!-- tag used as start with -->
-		<routing_type tag="access" mode="amend"/>
+		<routing_type tag="access" mode="text"/>
 		<routing_type tag="agricultural" mode="amend"/>
-		<routing_type tag="barrier" mode="amend"/>
+		<routing_type tag="barrier" mode="text"/>
 		<routing_type tag="bollard" mode="amend"/>
 		<routing_type tag="bicycle" mode="amend"/>
 		<routing_type tag="bicycle_road" mode="amend"/>
@@ -6434,22 +6427,22 @@
 		<routing_type tag="tunnel" mode="amend"/>
 		<routing_type tag="indoor" mode="amend"/>
 		<routing_type tag="abutters" mode="amend"/>
-		<routing_type tag="osmand_ele_start" mode="amend"/>
-		<routing_type tag="osmand_ele_end" mode="amend"/>
-		<routing_type tag="osmand_ele_asc"  mode="amend"/>
-		<routing_type tag="osmand_ele_desc" mode="amend"/>
-		<routing_type tag="osmand_ele_incline" mode="amend"/>
-		<routing_type tag="osmand_ele_decline" mode="amend"/>
-		<routing_type tag="osmand_ele_incline_1" mode="amend"/>
-		<routing_type tag="osmand_ele_incline_3" mode="amend"/>
-		<routing_type tag="osmand_ele_incline_5" mode="amend"/>
-		<routing_type tag="osmand_ele_incline_7" mode="amend"/>
-		<routing_type tag="osmand_ele_incline_11" mode="amend"/>
-		<routing_type tag="osmand_ele_decline_1" mode="amend"/>
-		<routing_type tag="osmand_ele_decline_3" mode="amend"/>
-		<routing_type tag="osmand_ele_decline_5" mode="amend"/>
-		<routing_type tag="osmand_ele_decline_7" mode="amend"/>
-		<routing_type tag="osmand_ele_decline_11" mode="amend"/>
+		<routing_type tag="osmand_ele_start" mode="text"/>
+		<routing_type tag="osmand_ele_end" mode="text"/>
+		<routing_type tag="osmand_ele_asc"  mode="text"/>
+		<routing_type tag="osmand_ele_desc" mode="text"/>
+		<routing_type tag="osmand_ele_incline" mode="text"/>
+		<routing_type tag="osmand_ele_decline" mode="text"/>
+		<routing_type tag="osmand_ele_incline_1" mode="text"/>
+		<routing_type tag="osmand_ele_incline_3" mode="text"/>
+		<routing_type tag="osmand_ele_incline_5" mode="text"/>
+		<routing_type tag="osmand_ele_incline_7" mode="text"/>
+		<routing_type tag="osmand_ele_incline_11" mode="text"/>
+		<routing_type tag="osmand_ele_decline_1" mode="text"/>
+		<routing_type tag="osmand_ele_decline_3" mode="text"/>
+		<routing_type tag="osmand_ele_decline_5" mode="text"/>
+		<routing_type tag="osmand_ele_decline_7" mode="text"/>
+		<routing_type tag="osmand_ele_decline_11" mode="text"/>
 		<routing_type tag="traffic_signals:direction" mode="amend"/>
 	</category>
 </osmand_types>
