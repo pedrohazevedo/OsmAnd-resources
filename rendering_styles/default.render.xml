@@ -6902,11 +6902,11 @@
 					<case tag="route_mtb" value="" nameTag="bicycle_ref" nameTag2="mtb:name" textOrder="43" textColor="$mtbRouteTextColor"/>
 					<case tag="route_mtb" value="" nameTag="bicycle_mtb:name" textOrder="43" textColor="$mtbRouteTextColor"/>
 					<apply>
-						<case maxzoom="12" textSize="14"/>
-						<case maxzoom="15" textSize="16"/>
-						<case maxzoom="16" textSize="17"/>
-						<case maxzoom="17" textSize="18"/>
-						<case minzoom="18" textSize="21"/>
+						<case maxzoom="12" textSize="14" textShield="purple_cirle_cycle_node_shield"/>
+						<case maxzoom="15" textSize="16" textShield="purple_cirle_cycle_node_shield"/>
+						<case maxzoom="16" textSize="17" textShield="purple_cirle_cycle_node_shield"/>
+						<case maxzoom="17" textSize="18" textShield="purple_cirle_cycle_node_shield"/>
+						<case minzoom="18" textSize="21" textShield="purple_cirle_cycle_node_shield"/>
 					</apply>
 					<apply_if legend="true" textOnPath="true"/>
 				</switch>
