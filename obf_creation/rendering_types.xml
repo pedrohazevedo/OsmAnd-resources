@@ -1752,7 +1752,7 @@
 				
 		<type tag="route" value="horse" 
 				nameTags="ref,name" namePrefix="horse_route_"
-				additionalTags="network,osmc_foreground,osmc_foreground2,osmc_background,osmc_waycolor,osmc_stub_name" 
+				additionalTags="network,osmc_foreground,osmc_foreground2,osmc_background,osmc_waycolor" 
 				relationGroupAdditionalTags="network,osmc_foreground,osmc_background,osmc_foreground2,osmc_waycolor" 
 				relationGroupNameTags="osmc_stub_name,ref,name"
 				minzoom="11" relationGroup="true" notosm="true"/>
@@ -2609,7 +2609,7 @@
 		<type tag="osmc_foreground" value="yellow_upper" additional="true" notosm="true"/>
 		<type tag="osmc_foreground" value="yellow_x" additional="true" notosm="true"/>
 
-		<type tag="osmc_stub_name" value="." additional="text" relation="true" notosm="true"/>
+		<type tag="osmc_stub_name" additional="text" relation="true" notosm="true"/>
 
 		<!-- Note that many osmc:symbol tags have different format in OSM:
 		blue:white::A:blue
