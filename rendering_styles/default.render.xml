@@ -3870,9 +3870,12 @@
 					</switch>
 					<case showCycleRoutes="true" tag="route_bicycle" value="" nameTag="route_bicycle_#SEQ_osmc_stub_name" textShield="osmc_?route_bicycle_#SEQ_osmc_background?_bg" icon="osmc_?route_bicycle_#SEQ_osmc_foreground?"/>
 					<case showMtbRoutes="true" tag="route_mtb" value="" nameTag="route_mtb_#SEQ_osmc_stub_name" textShield="osmc_?route_mtb_#SEQ_osmc_background?_bg" icon="osmc_?route_mtb_#SEQ_osmc_foreground?"/>
-					<case horseRoutes="true" tag="route_horse" value="" nameTag="route_horse_#SEQ_osmc_stub_name" textShield="osmc_?route_horse_#SEQ_osmc_background?_bg" icon="osmc_?route_horse_#SEQ_osmc_foreground?"/>
-					<case tag="route_piste" nameTag="route_piste_#SEQ_osmc_stub_name" textShield="osmc_?route_piste_#SEQ_osmc_background?_bg" icon="osmc_?route_piste_#SEQ_osmc_foreground?"/>
 				</switch>
+
+				<!-- Bicycle -->
+
+<!--					<case horseRoutes="true" tag="route_horse" value="" nameTag="route_horse_#SEQ_osmc_stub_name"/>
+					<case tag="piste:type" value="" additional="route=piste" nameTag="osmc_stub_name"/>-->
 
 				<!-- Highway shields -->
 				<switch>
@@ -12418,17 +12421,14 @@
 				<case tag="route_hiking" value="" hikingRoutesOSMC="walkingRoutesOSMC" minzoom="12" color="$osmcDefaultColor" />
 				<case tag="route_hiking" value="" hikingRoutesOSMC="walkingRoutesOSMCNodes" minzoom="12" />
 				<apply_if hikingRoutesOSMC="walkingRoutesOSMC">
-					<switch seq="1:10">
-						<case additional="route_hiking_#SEQ_osmc_waycolor=black" color="$osmcBlackColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=black" color="$osmcBlackColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=blue" color="$osmcBlueColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=green" color="$osmcGreenColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=orange" color="$osmcOrangeColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=red" color="$osmcRedColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=yellow" color="$osmcYellowColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=brown" color="$osmcBrownColor"/>
-						<case additional="route_hiking_#SEQ_osmc_waycolor=purple" color="$osmcPurpleColor"/>
-					</switch>
+					<case additional="hiking_osmc_waycolor=black" color="$osmcBlackColor"/>
+					<case additional="hiking_osmc_waycolor=blue" color="$osmcBlueColor"/>
+					<case additional="hiking_osmc_waycolor=green" color="$osmcGreenColor"/>
+					<case additional="hiking_osmc_waycolor=orange" color="$osmcOrangeColor"/>
+					<case additional="hiking_osmc_waycolor=red" color="$osmcRedColor"/>
+					<case additional="hiking_osmc_waycolor=yellow" color="$osmcYellowColor"/>
+					<case additional="hiking_osmc_waycolor=brown" color="$osmcBrownColor"/>
+					<case additional="hiking_osmc_waycolor=purple" color="$osmcPurpleColor"/>
 				</apply_if>
 				<apply_if hikingRoutesOSMC="walkingRoutesOSMCNodes" minzoom="12">
 					<case additional="hiking_node_network=iwn" color="$iwnNodeNetworkColor"/>
@@ -12449,16 +12449,14 @@
 			<switch horseRoutes="true">
 				<case minzoom="12" tag="route_horse" value="" color="$horseRouteDefaultColor"/>
 				<apply>
-					<switch seq="1:10">
-						<case additional="route_horse_#SEQ_osmc_waycolor=black" color="$osmcBlackColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=blue" color="$osmcBlueColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=green" color="$osmcGreenColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=orange" color="$osmcOrangeColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=red" color="$osmcRedColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=yellow" color="$osmcYellowColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=brown" color="$osmcBrownColor"/>
-						<case additional="route_horse_#SEQ_osmc_waycolor=purple" color="$osmcPurpleColor"/>
-					</switch>
+					<case additional="osmc_waycolor=black" color="$osmcBlackColor"/>
+					<case additional="osmc_waycolor=blue" color="$osmcBlueColor"/>
+					<case additional="osmc_waycolor=green" color="$osmcGreenColor"/>
+					<case additional="osmc_waycolor=orange" color="$osmcOrangeColor"/>
+					<case additional="osmc_waycolor=red" color="$osmcRedColor"/>
+					<case additional="osmc_waycolor=yellow" color="$osmcYellowColor"/>
+					<case additional="osmc_waycolor=brown" color="$osmcBrownColor"/>
+					<case additional="osmc_waycolor=purple" color="$osmcPurpleColor"/>
 				</apply>
 			</switch>
 			<apply_if hikingRoutesOSMC="walkingRoutesScopeOSMC" color="$null"/>
