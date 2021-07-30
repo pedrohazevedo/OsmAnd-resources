@@ -1,6 +1,6 @@
 # MacOSX
 .DS_Store
-
+.vscode
 # Embedded resources generated files
 /embed-resources.list
 /embed-resources.index
