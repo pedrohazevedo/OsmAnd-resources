@@ -100,13 +100,13 @@ function populateDictionary(tts) {
 	dictionary["exceed_limit"] = tts ? "limite de velocidade" : "exceed_limit.ogg";
 	dictionary["attention"] = tts ? "Atenção" : "attention.ogg";
 	dictionary["a_frente"] = tts ? " à frente" : "a_frente.ogg"; // pequena diferenciação do inglês, para indicar que o objeto se encontra à frente
-	dictionary["speed_camera"] = tts ? "radar" : "speed_camera.ogg";
+	dictionary["speed_camera"] = tts ? "radar de velocidade" : "speed_camera.ogg";
 	dictionary["border_control"] = tts ? "alfândega" : "border_control.ogg";
 	dictionary["railroad_crossing"] = tts ? "cruzamento de linha férrea" : "railroad_crossing.ogg";
-	dictionary["traffic_calming"] = tts ? "obstáculo" : "traffic_calming.ogg";
+	dictionary["traffic_calming"] = tts ? "lombada" : "traffic_calming.ogg";
 	dictionary["toll_booth"] = tts ? "pedágio" : "toll_booth.ogg";
-	dictionary["stop"] = tts ? "sinal de pare" : "stop.ogg";
-	dictionary["pedestrian_crosswalk"] = tts ? "passeio de pedestres" : "pedestrian_crosswalk.ogg";
+	dictionary["stop"] = tts ? "placa de pare" : "stop.ogg";
+	dictionary["pedestrian_crosswalk"] = tts ? "passagem de pedestres" : "pedestrian_crosswalk.ogg";
 	dictionary["tunnel"] = tts ? "túnel" : "tunnel.ogg";
 
 	// OTHER PROMPTS
@@ -118,7 +118,7 @@ function populateDictionary(tts) {
 	// STREET NAME PREPOSITIONS
 	dictionary["onto"] = tts ? "para" : "onto.ogg";
 	dictionary["on"] = tts ? "em" : "on.ogg";
-	dictionary["to"] = tts ? "em direção a" : "to.ogg";
+	dictionary["to"] = tts ? "para" : "to.ogg";
 	dictionary["toward"] = tts ? "em direção a" : "toward.ogg";
 
 	// DISTANCE UNIT SUPPORT
